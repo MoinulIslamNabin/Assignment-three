@@ -2,3 +2,7 @@
 .manrope-font {
     font-family: "Manrope", sans-serif;
   }
+
+* {
+    border: 1px solid gold;
+}
