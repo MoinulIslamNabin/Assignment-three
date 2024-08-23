@@ -5,4 +5,7 @@ module.exports = {
       extend: {},
     },
     plugins: [],
+    backgroundImage: {
+      'connect-texture': "url('./assets/bg.jpg')",
+    }
   }
