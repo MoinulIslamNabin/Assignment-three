@@ -3,6 +3,15 @@
     font-family: "Manrope", sans-serif;
   }
 
-* {
-    border: 1px solid gold;
+  ::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(#000000 -20%, #242323 50%, #000000 100%);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #E6533C;
+    border-radius: 15px;
 }

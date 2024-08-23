@@ -9,8 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <!-- vanilla css -->
-    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
     <!-- daisy & tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -101,24 +99,6 @@
                                 d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow">
-                        <li><a
-                                class="pl-0 text-[#737373] text-base font-semibold hover:bg-transparent hover:text-black ease-in-out">Home</a>
-                        </li>
-                        <li><a
-                                class="text-[#737373] text-base font-semibold hover:bg-transparent hover:text-black ease-in-out">Services</a>
-                        </li>
-                        <li><a
-                                class="text-[#737373] text-base font-semibold hover:bg-transparent hover:text-black ease-in-out">Portfolio</a>
-                        </li>
-                        <li><a
-                                class="text-[#737373] text-base font-semibold hover:bg-transparent hover:text-black ease-in-out">Blogs</a>
-                        </li>
-                        <li><a
-                                class="text-[#737373] text-base font-semibold hover:bg-transparent hover:text-black ease-in-out">Contact
-                                Us</a></li>
-                    </ul>
                 </div>
             </div>
         </nav>
@@ -289,9 +269,7 @@
 
                         <h1 class="text-5xl font-bold">Our Latest Portfolio</h1>
                         <p class="mx-auto py-6 w-full md:w-11/12 lg:w-3/4">
-                            We consult with clients, create design concepts, source materials, coordinate
-                            contractors,
-                            and manage the entire project.
+                            Our portfolio showcases innovative designs, diverse styles, and a keen eye for detail, reflecting our creative expertise.
                         </p>
                     </div>
                 </div>
@@ -356,7 +334,87 @@
                 </div>
             </div>
         </section>
-        <section class="bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover border-y-8 border-neutral-100">
+        <!-- unique -->
+        <section class="bg-neutral-100 py-16">
+            <!-- countdown -->
+            <div class="container flex justify-between items-center gap-3 flex-col mx-auto">
+                <div class="grid justify-center auto-cols-max grid-flow-col gap-5 text-center">
+                    <div class="bg-lime-200 hover:bg-lime-400 duration-500 rounded-box text-[#1C1C1C] flex flex-col p-2">
+                        <span class="countdown font-mono text-5xl">
+                            <span style="--value:15;"></span>
+                        </span>
+                        days
+                    </div>
+                    <div class="bg-lime-200 hover:bg-lime-400 duration-500 rounded-box text-[#1C1C1C]-content flex flex-col p-2">
+                        <span class="countdown font-mono text-5xl">
+                            <span style="--value:10;"></span>
+                        </span>
+                        hours
+                    </div>
+                    <div class="bg-lime-200 hover:bg-lime-400 duration-500 rounded-box text-[#1C1C1C] flex flex-col p-2">
+                        <span class="countdown font-mono text-5xl">
+                            <span style="--value:24;"></span>
+                        </span>
+                        min
+                    </div>
+                    <div class="bg-lime-200 hover:bg-lime-400 duration-500 rounded-box text-[#1C1C1C] flex flex-col p-2">
+                        <span class="countdown font-mono text-5xl">
+                            <span style="--value:${counter};"></span>
+                        </span>
+                        sec
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="uppercase text-center flex justify-center items-center">
+                    <h1 class="text-5xl font-bold w-11/12 lg:w-3/5">Only a few days remain until the discount ends.</h1>
+                    
+                </div>
+                <!-- stat -->
+                <div class="stats flex flex-col md:flex-row hover:bg-red-400 hover:scale-110 ease-in-out duration-700 bg-lime-400 text-primary-content mt-4">
+                    <div class="stat flex flex-col items-center justify-between md:w-[40%]">
+                        <div class="stat-title">
+                            <h3 class="text-gray-600 font-bold">Regular Plan</h3>
+                        </div>
+                        <div class="stat-value">
+                            <h2 class="text-neutral-100 font-extrabold">$9,999</h2>
+                        </div>
+                        <div class="stat-actions w-full">
+                            <button
+                                class="uppercase btn font-extrabold text-base md:text-sm rounded-3xl bg-white text-[#494949] border-0 hover:bg-red-600 ease-in-out duration-500 w-full md:justify-start pl-0 md:pl-2 md:pr-4 pr-3">
+                                <div class="icon rounded-full w-8 cursor-pointer">
+                                    <img src="./assets/arrow_right_alt_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"
+                                        class="scale-75">
+                                </div>
+                                suffer
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="stat flex flex-col items-center justify-between md:w-[60%]">
+                        <div class="stat-title">
+                            <h3 class="text-gray-600 font-bold">Discounted Plan</h3>
+                        </div>
+                        <div class="stat-value">
+                            <h2 class="text-neutral-100 font-extrabold">$4,999</h2>
+                        </div>
+                        <div class="stat-actions">
+                            <button
+                                class="uppercase btn font-extrabold text-base md:text-sm rounded-3xl bg-black text-white border-0 hover:bg-amber-400 ease-in-out duration-500">
+                                <div class="icon rounded-full w-8 cursor-pointer">
+                                    <img src="./assets/arrow_right_alt_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png"
+                                        class="scale-75">
+                                </div>
+                                avail discount
+                            </button>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- connect -->
+        <section class="bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover border-y-8 border-white">
             <div
                 class="hero mx-auto flex flex-col items-center justify-between pt-8 pb-16 lg:pt-0 mt-0 lg:mt-12  container">
                 <div class="hero-content text-center">
@@ -402,7 +460,7 @@
         </section>
     </main>
 
-    <footer class="footer footer-center bg-[#1C1C1C] text-base-content rounded p-10">
+    <footer class="footer footer-center bg-[#1C1C1C] text-base-content  p-10">
         <nav class="container  mx-auto py-5 overflow-hidden px-2 xl:px-20 lg:px-5">
             <div class="navbar  flex-col">
                 <div class="my-2">
@@ -416,10 +474,13 @@
 
                 </div>
                 <div class="mt-4 md:w-4/5 lg:w-2/3 md:mt-6 md:mb-4">
-                    <p class="text-[#737373] font-medium text-sm lg:text-base">Partner with us for your interior design needs. We blend creativity and expertise to transform your space into something extraordinary.</p>
+                    <p class="text-[#737373] font-medium text-sm lg:text-base">Partner with us for your interior design
+                        needs. We blend creativity and expertise to transform your space into something extraordinary.
+                    </p>
                 </div>
                 <div class="my-2 w-full">
-                    <ul class="menu menu-horizontal flex-col items-center justify-between mx-auto w-full lg:w-4/5 md:flex-row px-1">
+                    <ul
+                        class="menu menu-horizontal flex-col items-center justify-between mx-auto w-full lg:w-4/5 md:flex-row px-1">
                         <li><a
                                 class="text-gray-300 border-2 border-[#1C1C1C] rounded-sm hover:border-b-lime-300 text-base font-semibold hover:bg-transparent hover:text-white ease-in-out">Home</a>
                         </li>
@@ -438,18 +499,18 @@
                     </ul>
                 </div>
                 <div class="mx-auto w-full md:mt-6 lg:mt-10 justify-center">
-                    
-                        <a
-                            class="btn font-extrabold text-base md:text-sm rounded-3xl bg-btn-color border-0 hover:bg-red-400 ease-in-out duration-500  w-full md:w-auto ">Book
-                            Consult
-                            <div class="rounded-full w-8 bg-black hover:cursor-pointer">
-                                <img src="./assets/arrow_right_alt_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png"
-                                    class="-rotate-45 scale-75">
-                            </div>
-                        </a>
-                    
+
+                    <a
+                        class="btn font-extrabold text-base md:text-sm rounded-3xl bg-btn-color border-0 hover:bg-red-400 ease-in-out duration-500  w-full md:w-auto ">Book
+                        Consult
+                        <div class="rounded-full w-8 bg-black hover:cursor-pointer">
+                            <img src="./assets/arrow_right_alt_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png"
+                                class="-rotate-45 scale-75">
+                        </div>
+                    </a>
+
                 </div>
-                
+
             </div>
         </nav>
     </footer>
