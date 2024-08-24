@@ -9,6 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        .manrope-font {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
     <!-- daisy & tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -269,7 +274,8 @@
 
                         <h1 class="text-5xl font-bold">Our Latest Portfolio</h1>
                         <p class="mx-auto py-6 w-full md:w-11/12 lg:w-3/4">
-                            Our portfolio showcases innovative designs, diverse styles, and a keen eye for detail, reflecting our creative expertise.
+                            Our portfolio showcases innovative designs, diverse styles, and a keen eye for detail,
+                            reflecting our creative expertise.
                         </p>
                     </div>
                 </div>
@@ -335,29 +341,43 @@
             </div>
         </section>
         <!-- unique -->
-        <section class="bg-neutral-100 py-16">
+        <section class="bg-neutral-100 py-16 relative overflow-hidden">
+            <!-- images -->
+            <img src="./assets/square (1).png" alt="none"
+                class="hidden md:flex absolute scale-100 lg:scale-150 -top-3 lg:top-1 right-[-4.5rem] lg:-right-16 rotate-[-135deg]">
+            <img src="./assets/square (2).png" alt="none"
+                class="hidden md:flex absolute scale-[.4] -top-28 -left-56 lg:scale-[.6] lg:-top-24 lg:-left-48 rotate-[135deg]">
+            <img src="./assets/square (3).png" alt="none"
+                class="hidden md:flex absolute scale-50 lg:scale-[.6] -bottom-40 lg:-bottom-36 -left-48 lg:-left-44 rotate-[45deg]">
+            <img src="./assets/square (4).png" alt="none"
+                class="hidden md:flex absolute lg:scale-125 -bottom-6 lg:-bottom-4 -right-12 lg:-right-9 rotate-[-45deg]">
+
             <!-- countdown -->
-            <div class="container flex justify-between items-center gap-3 flex-col mx-auto">
-                <div class="grid justify-center auto-cols-max grid-flow-col gap-5 text-center">
-                    <div class="bg-lime-200 hover:bg-lime-400 duration-500 rounded-box text-[#1C1C1C] flex flex-col p-2">
+            <div class="z-10 drop-shadow-lg container flex justify-between items-center gap-3 flex-col mx-auto">
+                <div class="grid justify-center auto-cols-max grid-flow-col gap-3 md:gap-5 text-center">
+                    <div
+                        class="bg-lime-200 hover:bg-lime-400 duration-500 rounded-box text-[#1C1C1C] flex flex-col p-2">
                         <span class="countdown font-mono text-5xl">
                             <span style="--value:15;"></span>
                         </span>
                         days
                     </div>
-                    <div class="bg-lime-200 hover:bg-lime-400 duration-500 rounded-box text-[#1C1C1C]-content flex flex-col p-2">
+                    <div
+                        class="bg-lime-200 hover:bg-lime-400 duration-500 rounded-box text-[#1C1C1C]-content flex flex-col p-2">
                         <span class="countdown font-mono text-5xl">
                             <span style="--value:10;"></span>
                         </span>
                         hours
                     </div>
-                    <div class="bg-lime-200 hover:bg-lime-400 duration-500 rounded-box text-[#1C1C1C] flex flex-col p-2">
+                    <div
+                        class="bg-lime-200 hover:bg-lime-400 duration-500 rounded-box text-[#1C1C1C] flex flex-col p-2">
                         <span class="countdown font-mono text-5xl">
                             <span style="--value:24;"></span>
                         </span>
                         min
                     </div>
-                    <div class="bg-lime-200 hover:bg-lime-400 duration-500 rounded-box text-[#1C1C1C] flex flex-col p-2">
+                    <div
+                        class="bg-lime-200 hover:bg-lime-400 duration-500 rounded-box text-[#1C1C1C] flex flex-col p-2">
                         <span class="countdown font-mono text-5xl">
                             <span style="--value:${counter};"></span>
                         </span>
@@ -365,12 +385,13 @@
                     </div>
                 </div>
                 <!-- text -->
-                <div class="uppercase text-center flex justify-center items-center">
+                <div class="z-10 drop-shadow-lg uppercase text-center flex justify-center items-center">
                     <h1 class="text-5xl font-bold w-11/12 lg:w-3/5">Only a few days remain until the discount ends.</h1>
-                    
+
                 </div>
                 <!-- stat -->
-                <div class="stats flex flex-col md:flex-row hover:bg-red-300 hover:scale-110 ease-in-out duration-700 bg-lime-400 text-primary-content mt-4">
+                <div
+                    class="z-10 drop-shadow-lg stats flex flex-col md:flex-row hover:bg-red-300 hover:scale-110 ease-in-out duration-700 bg-lime-400 text-primary-content mt-4">
                     <div class="stat flex flex-col items-center justify-between md:w-[40%]">
                         <div class="stat-title">
                             <h3 class="text-gray-600 font-bold">Regular Plan</h3>
@@ -406,8 +427,8 @@
                                 </div>
                                 avail discount
                             </button>
-                            
-                            
+
+
                         </div>
                     </div>
                 </div>
