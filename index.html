@@ -203,7 +203,7 @@
                         </button>
 
                         <h1 class="text-5xl font-bold">Our Works Process</h1>
-                        <p class="mx-auto py-6 w-full md:w-11/12 lg:w-3/4">
+                        <p class="mx-auto text-[#494949] text-sm md:text-base font-medium py-6 w-full md:w-11/12 lg:w-3/4">
                             We consult with clients, create design concepts, source materials, coordinate contractors,
                             and manage the entire project.
                         </p>
@@ -273,7 +273,7 @@
                         </button>
 
                         <h1 class="text-5xl font-bold">Our Latest Portfolio</h1>
-                        <p class="mx-auto py-6 w-full md:w-11/12 lg:w-3/4">
+                        <p class="mx-auto text-[#494949] text-sm md:text-base font-medium py-6 w-full md:w-11/12 lg:w-3/4">
                             Our portfolio showcases innovative designs, diverse styles, and a keen eye for detail,
                             reflecting our creative expertise.
                         </p>
@@ -286,7 +286,7 @@
                         <img src="./assets/img1.png" alt="Movie" class="rounded-xl pr-6 pl-6 md:pr-0 md:pl-6 py-6" />
                         <div class="card-body pt-0 md:pt-8 md:w-1/2 lg:w-3/4">
                             <h2 class="text-[#494949] font-bold text-base md:text-lg lg:text-xl">Residential</h2>
-                            <p class="">Brick exterior, cozy
+                            <p class="text-[#737373] font-medium text-sm lg:text-base">Brick exterior, cozy
                                 balconies, tree-lined entrance, multi-story, warm lighting, and welcoming
                                 atmosphere.</p>
                             <div class="card-actions justify-start">
@@ -302,7 +302,7 @@
                         </div>
                     </div>
                     <div
-                        class="order-2 card card-side justify-center border border-gray-300/50 lg:w-[130%] xl:w-[128.5%] xl:translate-x-[-5.5rem] lg:translate-x-[-4.5rem] bg-white hover:bg-lime-300 hover:scale-95 ease-in-out duration-300">
+                        class="order-2 card card-side justify-center border border-gray-300/50 2xl:w-[131%] lg:w-[130%] xl:w-[130%] 2xl:translate-x-[-7rem] xl:translate-x-[-5.75rem] lg:translate-x-[-4.5rem] bg-white hover:bg-lime-300 hover:scale-95 ease-in-out duration-300">
                         <img src="./assets/img2.png" alt="Movie" class="rounded-xl px-6 py-6 w-full " />
                     </div>
                     <div
@@ -435,10 +435,11 @@
             </div>
         </section>
         <!-- connect -->
-        <section class="bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover border-y-8 border-white">
+        <section class="bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover border-y-8 border-white relative">
+            <div class="bg-white/50 h-[-webkit-fill-available] w-full absolute top-0 left-0"></div>
             <div
                 class="hero mx-auto flex flex-col items-center justify-between pt-8 pb-16 lg:pt-0 mt-0 lg:mt-12  container">
-                <div class="hero-content text-center">
+                <div class="z-10 hero-content text-center">
                     <div class="">
                         <button
                             class="btn mb-4 font-bold text-base rounded-3xl bg-[#ABEF5F33]/20 text-[#494949] border-0 hover:bg-lime-300 ease-in-out duration-500">
@@ -449,15 +450,15 @@
                             Let’s Connect
                         </button>
 
-                        <h1 class="text-5xl font-bold">Let’s Discuss Next Project</h1>
-                        <p class="mx-auto py-6 w-full md:w-11/12 lg:w-3/4">
+                        <h1 class="text-5xl font-bold text-[#212121]">Let’s Discuss Next Project</h1>
+                        <p class="mx-auto text-[#494949] text-sm md:text-base font-medium  py-6 w-full md:w-11/12 lg:w-3/4">
                             In discussing our next interior design project, we'll explore client needs, space
                             functionality, aesthetic preferences, material selection, and budget alignment.
                         </p>
                     </div>
                 </div>
                 <!-- form -->
-                <div class="grid grid-cols-1 md:grid-cols-2 grid-rows-6 gap-6 w-11/12 md:w-4/5 lg:w-3/4">
+                <div class="z-10 grid grid-cols-1 md:grid-cols-2 grid-rows-6 gap-6 w-11/12 md:w-4/5 lg:w-3/4">
                     <input type="text" placeholder="First Name*"
                         class="focus:bg-red-200 hover:bg-red-200 ease-in-out duration-300 input input-bordered input-md rounded-full border-none" />
                     <input type="text" placeholder="Last Name*"
